@@ -14,20 +14,8 @@
   box-sizing: border-box;
 }
 
-/* Links */
-
-a {
-  text-decoration: none;
-}
-
 html {
   font-size: 62.5%;
-}
-a {
-  padding: 0;
-  margin: 0;
-  line-height: normal;
-  display: inline-block;
 }
 img {
   width: 100%;
@@ -41,6 +29,10 @@ body {
 
 .list {
   list-style: none;
+}
+/* Links */
+a {
+  text-decoration: none;
 }
 /* Navigation Bar */
 .nav {
