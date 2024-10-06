@@ -163,7 +163,63 @@ a {
 .icon--primary {
   fill: var(--color-primary);
 }
+/* Buttons */
+.btn {
+  border-radius: 10rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: background-color 0.15ss;
+}
+.btn--primary:hover {
+  background-color: #4193fd;
+}
+.btn--secondary {
+  color: #fff;
+  background-color: var(--color-secondary);
+  transition: background-color 0.15s;
+}
+.btn--secondary:hover {
+  background-color: #33ddfb;
+}
+.btn--outline {
+  background-color: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+  transition: background-color 0.15s;
+}
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+.btn--accent {
+  color: #ffffff;
+  background-color: var(--color-accent);
+  transition: background-color 0.15s;
+}
+.btn--accent:hover {
+  background-color: #f75a31;
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
 
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.4rem;
+  }
+}
 /* Navigation Bar */
 .nav {
   background: #000;
@@ -183,8 +239,6 @@ a {
   padding: 0;
 }
 
-.nav__item {
-}
 .nav__item > a {
   color: #d2d0db;
   transition: color 0.3s;
