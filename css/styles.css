@@ -24,7 +24,6 @@ body {
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
-  margin: 5rem;
 }
 h1,
 h2,
@@ -340,6 +339,30 @@ a {
   }
   .card .card__body .list__item {
     margin-bottom: 1.5rem;
+  }
+}
+/* Media */
+.media {
+  display: flex;
+}
+.media__image {
+  margin-top: 2rem;
+}
+.media__body {
+  margin-left: 2rem;
+}
+.media__title {
+  font-size: 2.4rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.media__body p {
+  font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .media__title,
+  .media__body p {
+    font-size: 1.8rem;
   }
 }
 /* Navigation Bar
