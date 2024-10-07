@@ -6,6 +6,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
+  --border-raidus: 30px;
 }
 
 *,
@@ -163,6 +164,9 @@ a {
 .icon--primary {
   fill: var(--color-primary);
 }
+.icon--accent {
+  fill: red;
+}
 /* Buttons */
 .btn {
   border-radius: 10rem;
@@ -218,6 +222,37 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.4rem;
+  }
+}
+/* Inputs */
+.input {
+  border-radius: var(--border-raidus);
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: none;
+  padding: 2rem 3.5rem;
+}
+.input::placeholder {
+  color: #cbcc;
+}
+.input-group {
+  display: flex;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+}
+.input-group .input {
+  flex-grow: 1;
+  border: none;
+  padding-left: 1rem;
+}
+.input-group .btn {
+  margin: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
   }
 }
 /* Navigation Bar */
