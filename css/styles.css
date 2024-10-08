@@ -548,6 +548,32 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+/* Blocks */
+.block {
+  --block-padding: 6rem;
+  padding: 6rem 3rem;
+}
+.block__container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.block__header {
+  text-align: center;
+}
+.block--dark {
+  background-color: #000;
+  color: #7b858b;
+  padding-bottom: calc(var(--block-padding) + 4rem);
+}
+.block--dark .block__heading {
+  color: #fff;
+}
+.block--skewed--right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--skewed--left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
 /* Navigation Bar
 .nav {
   background: #000;
