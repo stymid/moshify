@@ -4,3 +4,5 @@ dist/
 .cache/
 chgvjbkn/
 images/
+.cache/
+dist/
